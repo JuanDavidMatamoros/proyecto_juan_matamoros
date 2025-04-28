@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Admin', 'password' => bcrypt('password')]
         );
 
-        // Luego genera 25 usuarios aleatorios con correos únicos
+        // Luego genera 10 usuarios aleatorios con correos únicos
         \App\Models\User::factory(10)->create();
 
         // Llama al seeder de equipos

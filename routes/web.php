@@ -32,7 +32,7 @@ Route::middleware('auth')->controller(EquipoController::class)->group(function (
     Route::put('/equipos/{id}', 'update')->name('equipos.update')->whereNumber('id');
     Route::delete('/equipos/{id}', 'destroy')->name('equipos.destroy')->whereNumber('id');
 
-    // Extra: ruta para ver jugadores por equipo
+    // Ruta para ver jugadores por equipo
     Route::get('/equipos/{id}/jugadores', 'jugadores')->name('equipos.jugadores')->whereNumber('id');
 });
 
